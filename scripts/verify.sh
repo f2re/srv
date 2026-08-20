@@ -16,6 +16,7 @@ for f in install.sh update.sh vm-init/vm-setup.sh vm-init/setup.sh vm-init/healt
 done
 python3 -m compileall -q migration/mail-migration/mailbox_sync.py
 
+(cd archives && sha256sum -c SHA256SUMS)
 archive="archives/infrastructure-migration-kit-v1.0.0.tar.gz"
 if [[ -f "$archive" ]]; then
   tmp=$(mktemp -d)
