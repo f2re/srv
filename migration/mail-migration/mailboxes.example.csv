@@ -1,0 +1,2 @@
+source_host,source_port,source_security,source_user,source_password_file,target_host,target_port,target_security,target_user,target_password_file,extra_args
+old-mail.example.org,993,ssl,user1@example.org,/root/migration-secrets/user1-old.pass,new-mail.internal,993,ssl,user1@example.org,/root/migration-secrets/user1-new.pass,""
