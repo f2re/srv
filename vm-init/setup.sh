@@ -54,7 +54,7 @@ fi
 
 if (( base_only == 0 )); then
   script="$KIT_ROOT/roles/$role.sh"
-  [[ -x "$script" ]] || { ui_warn 'Неизвестная роль' "$role"; usage; exit 2; }
+  [[ -f "$script" ]] || { ui_warn 'Неизвестная роль' "$role"; usage; exit 2; }
   export ROLE="$role"
   write_config_kv ROLE "$role"
 fi
