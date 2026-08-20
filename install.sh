@@ -47,4 +47,4 @@ fi
 
 chmod -R go-w "$DEST"
 log "Репозиторий готов: $DEST"
-exec "$DEST/vm-init/vm-setup.sh" "$@"
+exec bash "$DEST/vm-init/vm-setup.sh" "$@"
