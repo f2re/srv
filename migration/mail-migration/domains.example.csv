@@ -1,0 +1,2 @@
+domain,description,max_mailboxes,default_quota_mb,total_quota_mb,active
+example.org,Main project domain,100,5120,512000,true
